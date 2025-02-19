@@ -15,10 +15,15 @@
  */
 
 export default function Entry(props){
+    console.log(props)
+
     return(
         <article>
             <div className="main-img-container">        
-                <img src={props.img} width="100px" alt={props.alt_img}/>
+                <img 
+                    src={props.img.src} 
+                    alt={props.img.alt}
+                />
             </div>
             <div className="info-container">
                 <img src="marker.png" alt ="location marker"/>
@@ -27,6 +32,7 @@ export default function Entry(props){
                 <h1>{props.title}</h1>
                 <h2>{props.dates}</h2>
                 <p>{props.text}</p>
+                <hr /> {/* Horizontal line */}
             </div>
         </article>
 
