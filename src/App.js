@@ -8,17 +8,14 @@ function App() {
   console.log(travel_data)
 
   const blog_content = travel_data.map(
-    (trip) => (
-      <Entry 
-          key={trip.id}
-          img={trip.img}
-          country={trip.country}
-          url={trip.url_link}
-          title={trip.title}
-          dates={trip.dates}
-          text={trip.text}
-      />
-   )
+    (trip) => {
+      return (
+        <Entry 
+            key={trip.id}
+            props={trip}
+        />
+      )
+    }
   )
 
   console.log(blog_content)

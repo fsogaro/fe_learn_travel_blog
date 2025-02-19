@@ -1,5 +1,6 @@
 
-export default function Entry(props){
+export default function Entry(entry){
+    const {props} = entry
     console.log(props)
 
     return(
@@ -13,7 +14,7 @@ export default function Entry(props){
             <div className="info-container">
                 <img src="marker.png" alt ="location marker"/>
                 <span>{props.country}</span>
-                <a href={props.url_link}>View on Google Maps</a>
+                <a href={props.googleMapsLink}>View on Google Maps</a>
                 <h1>{props.title}</h1>
                 <h2>{props.dates}</h2>
                 <p>{props.text}</p>
