@@ -10,6 +10,7 @@ function App() {
   const blog_content = travel_data.map(
     (trip) => (
       <Entry 
+          key={trip.id}
           img={trip.img}
           country={trip.country}
           url={trip.url_link}
