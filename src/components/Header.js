@@ -6,6 +6,9 @@ export default function Header() {
                 <img src="globe.png" alt="globe logo"/>
                 <span>My Travel Journal</span>
             </div>
+            <div className="header-div">
+                <a href="#ContactMe">Contact me</a>
+            </div>
         </header>  
     );
 };

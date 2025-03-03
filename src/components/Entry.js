@@ -1,6 +1,5 @@
 
-export default function Entry(entry){
-    const {props} = entry
+export default function Entry(props){
     console.log(props)
 
     return(
